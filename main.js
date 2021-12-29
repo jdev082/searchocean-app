@@ -9,12 +9,12 @@ function createWindow () {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      webViewTag: true
+      webViewTag: false
     }
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadURL("https://JaydenDev.github.io/searchocean/");
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
